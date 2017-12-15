@@ -1,9 +1,10 @@
 /**
  * 
  */
-package simhash;
+package com.simhash;
 
-import java.util.Arrays;
+import com.simhash.wordseg.IWordSeg;
+
 import java.util.List;
 
 /**

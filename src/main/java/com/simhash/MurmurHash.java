@@ -1,7 +1,7 @@
 /**
  * 
  */
-package simhash;
+package com.simhash;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;

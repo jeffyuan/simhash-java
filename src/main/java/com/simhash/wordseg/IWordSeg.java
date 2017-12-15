@@ -1,7 +1,7 @@
 /**
  * 
  */
-package simhash;
+package com.simhash.wordseg;
 
 import java.util.List;
 import java.util.Set;

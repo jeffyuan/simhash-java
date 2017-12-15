@@ -1,10 +1,10 @@
-simhash-java
+com.simhash-java
 ============
 
-A simple implementation of simhash algorithm by java.
+A simple implementation of com.simhash algorithm by java.
 
 ### Features:<br />  
-1. compute the simhash of a string<br />  
+1. compute the com.simhash of a string<br />
 2. compute the similarity between all the strins by build smart index, so We can deal with big data.<br />  
 
 ### How to use:

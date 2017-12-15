@@ -1,7 +1,7 @@
 /**
  * 
  */
-package simhash;
+package com.simhash;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,6 +17,7 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import com.google.common.io.Files;
+import com.simhash.wordseg.BinaryWordSeg;
 
 /**
  * @author zhangcheng
@@ -33,6 +34,7 @@ public class Main {
 			System.err.println("Usage: inputfile outputfile");
 			return;
 		}
+
 		long start = System.nanoTime();
 		// Creates SimHash object.
 		Simhash simHash = new Simhash(new BinaryWordSeg());
@@ -122,6 +124,7 @@ public class Main {
 			Map<Integer, Integer> docDistances = Maps.newHashMap();
 			for (Integer i : docSimilarCandidates) {
 				int dist = simHash.hammingDistance(docHash, docHashes.get(i));
+                System.out.println(dist);
 				if (dist <= 3) {
 					similarDocs.add(i);
 					bits.set(i);
